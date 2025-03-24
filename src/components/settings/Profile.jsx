@@ -1,12 +1,13 @@
 import { User } from "lucide-react";
 import SettingSection from "./SettingSection";
+import profilePic from "./myprofile.jpeg";
 
 const Profile = () => {
 	return (
 		<SettingSection icon={User} title={"Profile"}>
 			<div className='flex flex-col sm:flex-row items-center mb-6'>
 				<img
-					src='public/myprofile.jpeg' 
+					src={profilePic}
 					alt='Profile'
 					className='rounded-full w-20 h-20 object-cover mr-4'
 				/>
